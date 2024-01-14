@@ -15,7 +15,7 @@ ScavTrap::ScavTrap(std::string name) {
 	_attack_damage = 20;
 }
 
-ScavTrap::ScavTrap(const ScavTrap& other) {
+ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other) {
 	std::cout << "ScavTrap Copy constructor called" << std::endl;
 	*this = other;
 }

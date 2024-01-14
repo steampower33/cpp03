@@ -15,7 +15,7 @@ FragTrap::FragTrap(std::string name) {
 	_attack_damage = 30;
 }
 
-FragTrap::FragTrap(const FragTrap& other) {
+FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other) {
 	std::cout << "FragTrap Copy constructor called" << std::endl;
 	*this = other;
 }
